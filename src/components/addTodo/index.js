@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './styles.css';
 
 const AddTodo = ({submitTodo}) => {
   let input;
@@ -13,13 +14,16 @@ const AddTodo = ({submitTodo}) => {
         }}
       >
         <input
-          className="todo-input"
+          className="todo-input uk-input uk-form-width-medium"
           ref={(element) => {
             input = element;
           }}
         />
 
-        <button type="submit" className="todo-submit">
+        <button
+          type="submit"
+          className="todo-submit uk-button uk-button-primary"
+        >
           Add Todo
         </button>
       </form>

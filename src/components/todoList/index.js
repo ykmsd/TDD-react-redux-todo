@@ -6,7 +6,7 @@ const TodoList = ({ todos, deleteTodo }) => {
     <li key={todo.id}>
       <button
         type="button"
-        className="todo-delete"
+        className="todo-delete uk-button uk-button-danger"
         onClick={() => deleteTodo(todo.id)}
       >
         Delete

@@ -6,7 +6,7 @@ import TodoList from './components/todoList';
 import actions from './actions/';
 
 export const App = ({ submitTodo, todos, deleteTodo }) => (
-  <div>
+  <div className="uk-container">
     <h1>Todo List</h1>
     <AddTodo submitTodo={submitTodo} />
     <TodoList todos={todos} deleteTodo={deleteTodo} />
