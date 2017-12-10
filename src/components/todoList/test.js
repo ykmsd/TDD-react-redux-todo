@@ -1,4 +1,4 @@
-/* global describe, it, expect */
+/* global describe, it, expect, jest */
 import React from 'react';
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
@@ -8,6 +8,7 @@ configure({ adapter: new Adapter() });
 
 describe('TodoList component', () => {
   const deleteMock = jest.fn();
+  const undeleteMock = jest.fn();
 
   const props = {
     todos: [

@@ -10,14 +10,12 @@ configure({ adapter: new Adapter() });
 it('App renders without crashing', () => {
   const mockFunction = jest.fn();
 
-  const component = shallow(
-    <App
-      state={initialState}
-      submitTodo={mockFunction}
-      todos={[]}
-      deleteTodo={mockFunction}
-    />,
-  );
-  
+  const component = shallow(<App
+    state={initialState}
+    submitTodo={mockFunction}
+    todos={[]}
+    deleteTodo={mockFunction}
+    undeleteTodo={mockFunction}
+  />);
   expect(component.exists()).toEqual(true);
 });

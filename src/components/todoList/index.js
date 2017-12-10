@@ -6,7 +6,7 @@ const TodoList = ({ todos, deleteTodo }) => {
     <li key={todo.id}>
       <button
         type="button"
-        className="todo-delete uk-button uk-button-danger"
+        className="todo-delete uk-button uk-button-small uk-button-danger uk-margin-right"
         onClick={() => deleteTodo(todo.id)}
       >
         Delete
@@ -17,7 +17,7 @@ const TodoList = ({ todos, deleteTodo }) => {
   ));
 
   return (
-    <ul>
+    <ul className="uk-list uk-list-striped uk-list-large">
       {todoItems}
     </ul>
   );
